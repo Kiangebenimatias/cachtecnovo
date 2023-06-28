@@ -316,6 +316,7 @@ main{
     .opcao-procurar{
         background-color: white;
         margin: 10px;
+        border-radius: 50px 0;
     }
     .opcao-procurar > button{
         background-color: white;
