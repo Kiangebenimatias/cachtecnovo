@@ -284,19 +284,30 @@ main{
     
     
 }
+.men-360 span{
+    background-color: rgba(255, 166, 0, 0.550);
+}
+.admin-360 a{
+    background-color: rgba(165, 42, 42, 0.550);
+}
+.comercial-360 a{
+    background-color: rgba(255, 255, 0, 0.550);
+}
+.tecnico-360 a{
+    background-color: rgba(0, 0, 255, 0.550);
+}
 
-.menu-360 .imagem-360{
-    background-color: black;
-    margin-top: 170px;
-    margin-bottom: 5px;
+.entrar-360 a{
+    background-color: rgba(0, 128, 0, 0.550);
+    margin-bottom: auto;
     color: white;
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 
 }
 .sair-360 a{
+    background-color: rgba(182, 0, 0, 0.550);
     height: 40px;
     width: 40px;
     border-radius: 50%;
