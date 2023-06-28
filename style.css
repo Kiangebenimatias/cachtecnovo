@@ -264,9 +264,6 @@ main{
         margin-left: 5px;
         padding: 7px;
     }
-    .entrar-sair-funcoes-360{
-        position: fixed;
-    }
     .entrar-sair-funcoes-360 nav ul{
         background-color: rgb(128, 2, 128);
         height: 100vh;
@@ -277,38 +274,65 @@ main{
         background-color: rgba(183, 0, 183, 0.72);
         color: white;
         padding: 7px;
-        margin-top: 5px;
+        margin-top: 15px;
         border-radius: 10px 0 10px 10px;
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
     }
+    .men-360 span{
+        background-color: rgba(255, 166, 0, 0.550);
+    }
+    .admin-360 a{
+        background-color: rgba(165, 42, 42, 0.550);
+    }
+    .comercial-360 a{
+        background-color: rgba(255, 255, 0, 0.550);
+    }
+    .tecnico-360 a{
+        background-color: rgba(0, 0, 255, 0.550);
+    }
+    
+    .entrar-360 a{
+        background-color: rgba(0, 128, 0, 0.550);
+        margin-bottom: auto;
+        color: white;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    
+    }
+    .sair-360 a{
+        background-color: rgba(182, 0, 0, 0.550);
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+    }
     
     
-}
-.men-360 span{
-    background-color: rgba(255, 166, 0, 0.550);
-}
-.admin-360 a{
-    background-color: rgba(165, 42, 42, 0.550);
-}
-.comercial-360 a{
-    background-color: rgba(255, 255, 0, 0.550);
-}
-.tecnico-360 a{
-    background-color: rgba(0, 0, 255, 0.550);
+    .imagem{
+        background-color: white;
+        height: 150px;
+        width: 150px;
+    }
+    .opcao-procurar{
+        background-color: white;
+        margin: 10px;
+    }
+    .opcao-procurar > button{
+        background-color: white;
+        color: rgb(183, 0, 183);
+        border: solid rgb(183, 0, 183);
+    }
+    .opcao-procurar > input{
+        background-color: white;
+        margin: 5px;
+        color: black;
+        border: solid rgb(183, 0, 183);
+    }
+    .opcao-procurar > span{
+        color: rgb(183, 0, 183);
+    }
+    
 }
 
-.entrar-360 a{
-    background-color: rgba(0, 128, 0, 0.550);
-    margin-bottom: auto;
-    color: white;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
 
-}
-.sair-360 a{
-    background-color: rgba(182, 0, 0, 0.550);
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-}
+
