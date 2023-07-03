@@ -254,16 +254,15 @@
         display: flex;
         display: block;
         background-color: rgb(183, 0, 183);
-        background-attachment: fixed;
-        height: 100vh;
+        height: 100%;
         width: 50vw;
-        padding: 0 20px;
+        padding: 20px;
         
     }
     .menu-funcoes-968 p span{
         color: red;
         margin-top: 20px;
-        margin-left: 140px;
+        margin-left: 50%;
     }
     .menu-funcoes-968 li{
         display: block;
@@ -367,20 +366,21 @@
         display: flex;
     }
     .menu-funcoes-360{
-        height: 100vh;
+        height: 100%;
         width: 70vw;
         background-color: white;
         background-position: center center;
         background-size: cover;
         background-attachment: fixed;
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+        padding-bottom: 20px;
     }
     .menu-funcoes-360 > p span{
         background: none;
         box-shadow: none;
         margin-top: 5px;
         margin-bottom: 5px;
-        margin-left: 110px;
+        margin-left: 50%;
         color: red;
     }
     .menu-funcoes-360 li{
@@ -395,7 +395,7 @@
     .entrar-sair-funcoes-360 nav ul{
         background-color: rgb(128, 2, 128);
         height: 100vh;
-        padding: 10px;
+        padding: 5px;
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
     }
     .entrar-sair-funcoes-360 a,span{
