@@ -7,7 +7,7 @@
 .body-normal{
     display: flex;
 }
-.body-768{
+.body-968{
     display: none;
 }
 .body-360{
@@ -15,7 +15,7 @@
 }
 
 
-span{
+.body-normal span{
     cursor: pointer;
 }
 
@@ -28,23 +28,23 @@ span{
     columns: 2em;
 }
 
-nav li .p-menu{
+.body-normal nav li .p-menu{
     color: rgb(183, 0, 183);
     text-decoration: none;
     padding: 10px;
 }
-nav li a{
+.body-normal nav li a{
     display: inline-block;
     color: rgb(183, 0, 183);
     text-decoration: none;
     padding: 10px;
 }
 
-nav li .p-menu:hover,a:hover{
+.body-normal  nav  li .p-menu:hover,a:hover{
     background-color: rgb(183, 0, 183);
     color: white;
     border-radius: 5px 0 5px 5px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.349);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.349);
     transition: 0.5s;
 }
 
@@ -82,12 +82,11 @@ nav li .p-menu:hover,a:hover{
 
 .menu-funcoes{
     display: block;
-    position: fixed;
+    position: absolute;
     background-color: rgb(183, 0, 183);
     width: 100%;
-    height: 300px;
     padding: 30px;
-    padding-top: 40px;
+    padding-top: 50px;
     text-align: center;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.449);
 }
@@ -112,55 +111,62 @@ nav li .p-menu:hover,a:hover{
 }
 
 
-main{
+.body-normal main{
     margin: auto;
     text-align: center;
 }
 .imagem{
-    margin: auto;
-    margin-top: 50px;
-    margin-bottom: 20px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,-10%);
     width: 250px;
     height: 250px;
     border-radius: 50%;
     border: solid rgb(183, 0, 183);
 }
 .opcao-procurar{
+    position: absolute;
     background-color: rgb(183, 0, 183);
-    padding: 20px;
-    margin: auto;
-    text-align: center;
-    border-radius: 10px 0 10px 10px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.449);
-}
-.opcao-procurar button{
-    background-color: rgb(183, 0, 183);
-    width: 100px;
-    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    height: 50px;
     padding: 10px;
-    border: none;
-    border-top: solid white;
-    border-bottom: solid white;
-    border-left: solid white;
-    border-radius: 5px 5px 0 5px;
+    border: solid rgb(138, 3, 138);
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
 }
-.opcao-procurar input{
-    background-color: rgb(183, 0, 183);
-    margin-left: -5px;
-    width: 250px;
-    color: white;
-    text-align: center;
-    padding: 10px;
+.opcao-procurar .procurar-texto{
     border: none;
-    border-bottom: solid white;
-    border-radius: 0 0 5px 0;
-
+    background: none;
+    outline: none;
+    color: white;
+    line-height: 40px;
+    padding: 0 6px;
+    width: 0;
+    transition: .5s;
+}
+.opcao-procurar:hover > .procurar-texto{
+    width: 300px;
 }
 .opcao-procurar span{
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
+.gestao{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+}
 .gestao li{
     display: inline-block;
     margin-top: 20px;
@@ -214,31 +220,147 @@ main{
 
 .dropdown3:hover .dropdown-sair{
     display: block;
-
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1083px) {
     .body-normal{
         display: none;
     }
-    .body-768{
+    .body-968{
         display: block;
+        display: flex;
+    }
+
+    a:hover li{
+        background-color: white;
+        color: rgb(138, 3, 138);
+        box-shadow: none;
+    }
+
+    .menu-novo-968{
+        display: flex;
+        padding: 5px;
+    }
+    .body-968  .menu-novo-968  li p{
+        display: block;
+        color: rgb(183, 0, 183);
+    }
+    .body-968 .menu-novo-968 li a{
+        color: rgb(138, 3, 138);
+        margin-top: 10px;
+    }
+    .menu-funcoes-968{
+        display: flex;
+        display: block;
+        background-color: rgb(183, 0, 183);
+        background-attachment: fixed;
+        height: 100vh;
+        width: 50vw;
+        padding: 0 20px;
+        
+    }
+    .menu-funcoes-968 p span{
+        color: red;
+        margin-top: 20px;
+        margin-left: 140px;
+    }
+    .menu-funcoes-968 li{
+        display: block;
+        margin-top: 10px;
+    }
+    .menu-funcoes-968 li a{
+        font: bold 12pt caption;
+        display: block;
+        text-decoration: none;
+        color: white;
+        padding: 5px;
+    }
+    .entrar-sair-968{
+        position: absolute;
+        top: 99%;
+        transform: translate(0,-99%);
+        padding: 5px;
+
+    }
+    .entrar-sair-968 li a{
+        color: rgb(183, 0, 183);
+        margin-top: 10px;
+    }
+
+    .body-968 main{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+    }
+    .imagem-968{
+        width: 200px;
+        height: 200px;
+        border: solid rgb(183, 0, 183);
+        border-radius: 50%;
+        margin: auto;
+    }
+    .opcao-procurar-968{
+        background-color: rgb(183, 0, 183);
+        margin-top: 10px;
+        height: 40px;
+        padding: 10px;
+        border: solid rgb(138, 3, 138);
+        border-radius: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+    }
+    .opcao-procurar-968 .procurar-texto{
+        border: none;
+        background: none;
+        color: white;
+        outline: none;
+        line-height: 40px;
+        padding: 0 6px;
+        width: 200px;
+        transition: .5s;
+    }
+    .opcao-procurar-968 span{
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .gestao-968{
+        display: flex;
+        margin-top: 10px;
+    }
+    .gestao-968 li{
+        display: block;
+        display: inline-block;
+    }
+    .gestao-968 li a{
+        display: block;
+        color: rgb(138, 3, 138);
+        text-decoration: none;
+        padding: 1px;
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
     .body-normal{
         display: none;
     }
-    .body-768{
+    .body-968{
         display: none;
     }
     body{
-        height: 100vh;
         background-color: rgb(183, 0, 183);
         background-position: center center;
         background-attachment: fixed;
+        height: 100vh;
+        width: 100vw;
+
     }
     .body-360{
         display: block;
@@ -246,23 +368,29 @@ main{
     }
     .menu-funcoes-360{
         height: 100vh;
+        width: 70vw;
         background-color: white;
         background-position: center center;
         background-size: cover;
         background-attachment: fixed;
-        width: 260px;
-        position: fixed;
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
     }
     .menu-funcoes-360 > p span{
+        background: none;
+        box-shadow: none;
         margin-top: 5px;
         margin-bottom: 5px;
         margin-left: 110px;
         color: red;
     }
-    .menu-funcoes-360 li a{
+    .menu-funcoes-360 li{
+        margin-top: 10px;
         margin-left: 5px;
-        padding: 7px;
+    }
+    .menu-funcoes-360 li .a-360{
+        text-decoration: none;
+        color: rgb(183, 0, 183);
+        padding: 10px 10px;
     }
     .entrar-sair-funcoes-360 nav ul{
         background-color: rgb(128, 2, 128);
@@ -270,70 +398,125 @@ main{
         padding: 10px;
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
     }
-    .entrar-sair-funcoes-360 a,p span{
-        background-color: rgba(183, 0, 183, 0.72);
-        color: white;
-        padding: 7px;
-        margin-top: 15px;
-        border-radius: 10px 0 10px 10px;
-        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    .entrar-sair-funcoes-360 a,span{
+        display: block;
     }
     .men-360 span{
         background-color: rgba(255, 166, 0, 0.550);
+        color: white;
+        padding: 7px;
+        margin-top: 20px;
+        border-radius: 10px 0 10px 10px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
     }
     .admin-360 a{
         background-color: rgba(165, 42, 42, 0.550);
+        color: white;
+        padding: 7px;
+        margin-top: 20px;
+        border-radius: 10px 0 10px 10px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
     }
     .comercial-360 a{
         background-color: rgba(255, 255, 0, 0.550);
+        color: white;
+        padding: 7px;
+        margin-top: 20px;
+        border-radius: 10px 0 10px 10px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
     }
     .tecnico-360 a{
         background-color: rgba(0, 0, 255, 0.550);
+        color: white;
+        padding: 7px;
+        margin-top: 20px;
+        border-radius: 10px 0 10px 10px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    }
+    .recursos-360 a{
+        background-color: rgba(0, 255, 255, 0.508);
+        color: white;
+        padding: 7px;
+        margin-top: 20px;
+        border-radius: 10px 0 10px 10px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
     }
     
     .entrar-360 a{
         background-color: rgba(0, 128, 0, 0.550);
-        margin-bottom: auto;
         color: white;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
+        padding: 7px;
+        margin-top: 20px;
+        border-radius: 10px 0 10px 10px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
     
     }
     .sair-360 a{
         background-color: rgba(182, 0, 0, 0.550);
-        height: 40px;
-        width: 40px;
-        border-radius: 50%;
+        color: white;
+        padding: 7px;
+        margin-top: 20px;
+        border-radius: 10px 0 10px 10px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
     }
-    
-    
-    .imagem{
+    .imagem-360{
+        position: absolute;
+        top: 20%;
+        left: 55%;
+        transform: translate(-55%,-20%);
         background-color: white;
         height: 150px;
         width: 150px;
+        border-radius: 50%;
     }
-    .opcao-procurar{
+    .opcao-procurar-360{
+        position: absolute;
+        top: 50%;
+        left: 60%;
+        transform: translate(-60%,-50%);
         background-color: white;
-        margin: 10px;
-        border-radius: 50px 0;
+        margin-top: 10px;
+        height: 40px;
+        padding: 10px;
+        border: solid rgb(138, 3, 138);
+        border-radius: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
     }
-    .opcao-procurar > button{
-        background-color: white;
+    .opcao-procurar-360 .procurar-texto{
+        border: none;
+        background: none;
+        outline: none;
+        line-height: 40px;
+        padding: 0 6px;
+        max-width: 200px;
+        transition: .5s;
+    }
+    .opcao-procurar-360 span{
         color: rgb(183, 0, 183);
-        border: solid rgb(183, 0, 183);
-    }
-    .opcao-procurar > input{
-        background-color: white;
-        margin: 5px;
-        color: black;
-        border: solid rgb(183, 0, 183);
-    }
-    .opcao-procurar > span{
-        color: rgb(183, 0, 183);
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     
 }
 
+@media screen and (max-width: 360px) {
 
+    .imagem-360{
+        height: 100px;
+        width: 100px;
+        left: 68%;
+        transform: translate(-68%,-20%);
+    }
+    .opcao-procurar-360{
+        left: 68%;
+    }
+    .opcao-procurar-360 .procurar-texto{
+        max-width: 120px;
+    }
+    
+}
 
