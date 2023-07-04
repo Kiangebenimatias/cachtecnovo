@@ -84,9 +84,11 @@
     display: block;
     position: absolute;
     background-color: rgb(183, 0, 183);
+    height: 50%;
     width: 100%;
     padding: 30px;
     padding-top: 50px;
+    padding-bottom: 50px;
     text-align: center;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.449);
 }
@@ -189,7 +191,7 @@
     display: inline-block;
 }
 
-.dropdown-entrar{
+.dropdown-sair{
     margin-top: 5px;
     margin-left: -130px;
     padding: 10px;
@@ -201,27 +203,10 @@
     display: none;
 }
 
-.dropdown2:hover .dropdown-entrar{
+.dropdown2:hover .dropdown-sair{
     display: block;
 
 }
-
-.dropdown-sair{
-    margin-top: 5px;
-    margin-left: -150px;
-    padding: 10px;
-    position: absolute;
-    background-color: rgb(183, 0, 183);
-    color: white;
-    border-radius: 5px 0 5px 5px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.349);
-    display: none;
-}
-
-.dropdown3:hover .dropdown-sair{
-    display: block;
-}
-
 
 @media screen and (max-width: 1083px) {
     .body-normal{
@@ -354,160 +339,121 @@
     .body-968{
         display: none;
     }
-    body{
-        background-color: rgb(183, 0, 183);
-        background-position: center center;
-        background-attachment: fixed;
-        height: 100vh;
-        width: 100vw;
-
-    }
     .body-360{
         display: block;
     }
     .menu-funcoes-360{
-        height: 100vh;
+        height: 100%;
         width: 70vw;
-        background-color: white;
+        background-color: rgb(183, 0, 183);
         background-position: center center;
         background-size: cover;
         background-attachment: fixed;
-        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
         padding-bottom: 20%;
     }
     .menu-funcoes-360 > p span{
         background: none;
         box-shadow: none;
-        margin-top: 5px;
+        margin-top: 5%;
         margin-bottom: 5px;
         margin-left: 50%;
         color: red;
     }
     .menu-funcoes-360 li{
         margin-top: 10%;
-        margin-left: 5px;
     }
     .menu-funcoes-360 li .a-360{
         text-decoration: none;
-        color: rgb(183, 0, 183);
+        color: white;
         padding: 10px 10px;
     }
-    .men-360 span{
-        background-color: rgba(255, 166, 0, 0.550);
-        color: white;
-        padding: 7px;
-        margin-top: 20px;
-        border-radius: 10px 0 10px 10px;
-        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-    }
-    .admin-360 a{
-        background-color: rgba(165, 42, 42, 0.550);
-        color: white;
-        padding: 7px;
-        margin-top: 20px;
-        border-radius: 10px 0 10px 10px;
-        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-    }
-    .comercial-360 a{
-        background-color: rgba(255, 255, 0, 0.550);
-        color: white;
-        padding: 7px;
-        margin-top: 20px;
-        border-radius: 10px 0 10px 10px;
-        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-    }
-    .tecnico-360 a{
-        background-color: rgba(0, 0, 255, 0.550);
-        color: white;
-        padding: 7px;
-        margin-top: 20px;
-        border-radius: 10px 0 10px 10px;
-        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-    }
-    .recursos-360 a{
-        background-color: rgba(0, 255, 255, 0.508);
-        color: white;
-        padding: 7px;
-        margin-top: 20px;
-        border-radius: 10px 0 10px 10px;
-        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    .menu-360 span{
+        color: rgb(183, 0, 183);
+        margin-top: 10px;
+        margin-left: 10px;
     }
     
-    .entrar-360 a{
-        background-color: rgba(0, 128, 0, 0.550);
-        color: white;
-        padding: 7px;
-        margin-top: 20px;
-        border-radius: 10px 0 10px 10px;
-        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-    
-    }
-    .sair-360 a{
-        background-color: rgba(182, 0, 0, 0.550);
-        color: white;
-        padding: 7px;
-        margin-top: 20px;
-        border-radius: 10px 0 10px 10px;
-        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-    }
     .imagem-360{
-        position: absolute;
-        top: 20%;
-        left: 55%;
-        transform: translate(-55%,-20%);
+        
+        margin: auto;
+        margin-top: 30%;
         background-color: white;
         height: 150px;
         width: 150px;
         border-radius: 50%;
+        border: solid rgb(183, 0, 183);
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.35);
+
     }
     .opcao-procurar-360{
-        position: absolute;
-        top: 50%;
-        left: 60%;
-        transform: translate(-60%,-50%);
-        background-color: white;
-        margin-top: 10px;
+
+        background-color: rgb(183, 0, 183);
+        margin: auto;
+        margin-top: 20%;
+        margin-left: 10px;
+        margin-right: 10px;
         height: 40px;
+        max-width: 300px;
         padding: 10px;
-        border: solid rgb(138, 3, 138);
         border-radius: 40px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.35);
+
     
     }
     .opcao-procurar-360 .procurar-texto{
+
         border: none;
         background: none;
         outline: none;
         line-height: 40px;
-        padding: 0 6px;
+        padding: 0 5px;
         max-width: 200px;
         transition: .5s;
     }
     .opcao-procurar-360 span{
-        color: rgb(183, 0, 183);
+
+        color: white;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    
-}
 
-@media screen and (max-width: 360px) {
+    .novo-stock-comercial-cadastrar-360{
 
-    .imagem-360{
-        height: 100px;
-        width: 100px;
-        left: 68%;
-        transform: translate(-68%,-20%);
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20%;
     }
-    .opcao-procurar-360{
-        left: 68%;
+    .novo-stock-comercial-cadastrar-360 ul li{
+        display: inline-block;
+
     }
-    .opcao-procurar-360 .procurar-texto{
-        max-width: 120px;
+    .novo-stock-comercial-cadastrar-360 ul li a{
+        display: block;
+        padding: 10px;
+        margin: auto;
+        margin-left: 5px;
+        background-color: rgb(183, 0, 183);
+        color: white;
+        border-radius: 20px 20px 0 20px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.359);
     }
+
+    .sair-360{
+        position: absolute;
+        top: 98%;
+        display: block;
+        margin-left: 10px;
+    }
+    .sair-360 a{
+        color:rgb(183, 0, 183);
+    }
+
     
 }
 

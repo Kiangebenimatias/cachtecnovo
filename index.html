@@ -167,10 +167,10 @@
             <nav class="entrar-sair">
                 <ul>
                     <li class="dropdown2">
-                        <a href="#"><span class="material-icons">login</span></a>
-                        <div class="dropdown-entrar">
+                        <a href="#"><span class="material-icons">logout</span></a>
+                        <div class="dropdown-sair">
                             <p>
-                                Clica Aqui Para Acessar
+                                Clica Aqui Para Sair
                             </p>
                         </div>
                 </ul>
@@ -222,6 +222,12 @@
                         <a href="#">
                             <span class="material-icons">notes</span>
                             Criar Ficha
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="material-icons">support</span>
+                            Comercial
                         </a>
                     </li>
                     <li>
@@ -344,8 +350,14 @@
                     </li>
                     <li>
                         <a class="a-360" href="#">
-                            <span class="material-icons">add</span>
-                            Novo
+                            <span class="material-icons">group</span>
+                            Administaração
+                        </a>
+                    </li>
+                    <li>
+                        <a class="a-360" href="#">
+                            <span class="material-icons">input</span>
+                            Cadastrar Serviços
                         </a>
                     </li>
                     <li>
@@ -362,8 +374,8 @@
                     </li>
                     <li>
                         <a class="a-360" href="#">
-                            <span class="material-icons">input</span>
-                            Cadastrar Serviços
+                            <span class="material-icons">support</span>
+                            Comercial
                         </a>
                     </li>
                     <li>
@@ -376,6 +388,12 @@
                         <a class="a-360" href="#">
                             <span class="material-icons">money</span>
                             Finanças
+                        </a>
+                    </li>
+                    <li>
+                        <a class="a-360" href="#">
+                            <span class="material-icons">add</span>
+                            Novo
                         </a>
                     </li>
                     <li>
@@ -398,20 +416,27 @@
                     </li>
                     <li>
                         <a class="a-360" href="#">
+                            <span class="material-icons">accessibility</span>
+                            Recursos Humanos
+                        </a>
+                    </li>
+                    <li>
+                        <a class="a-360" href="#">
                             <span class="material-icons">call</span>
                             Saldos e Comunicações
+                        </a>
+                    </li>
+                    <li>
+                        <a class="a-360" href="#">
+                            <span class="material-icons">settings</span>
+                            Técnicos
                         </a>
                     </li>
                 </ul>
             </nav>
         </header>
-        <main class="entrar-sair-funcoes-360">
-            <nav class="menu-360">
-                
-            </nav>
-        </main>
         <section>
-            <p class="men-360">
+            <p class="menu-360">
                 <span class="material-icons" onclick="Menu2()">menu</span>
             </p>
             <div class="imagem-360">
@@ -422,13 +447,7 @@
                 <input type="search" placeholder="Pesquisar" class="procurar-texto" name="procurar" id="procurar2">
                 <span class="material-icons">search</span>
             </div>
-            
-            <li class="sair-360">
-                <a class="a-360" href="#">
-                    <span class="material-icons">logout</span>
-                </a>
-            </li>
-            <div>
+            <div class="novo-stock-comercial-cadastrar-360">
                 <ul>
                     <li class="novo-360">
                         <a class="a-360" href="#">
@@ -452,6 +471,11 @@
                     </li>
                 </ul>
             </div>
+            <li class="sair-360">
+                <a class="a-360" href="#">
+                    <span class="material-icons">logout</span>
+                </a>
+            </li>
         </section>
     </section>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>   
@@ -503,6 +527,8 @@
             $(".menu-360").hide(500)
             $(".imagem-360").hide(500)
             $(".opcao-procurar-360").hide(500)
+            $(".novo-stock-comercial-cadastrar-360").hide(500)
+            $(".sair-360").hide(500)
 
         }
         function Close2(){
@@ -511,6 +537,8 @@
             $(".menu-360").show(500)
             $(".imagem-360").show(500)
             $(".opcao-procurar-360").show(500)
+            $(".novo-stock-comercial-cadastrar-360").show(500)
+            $(".sair-360").show(500)
         }
 
     </script>
