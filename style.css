@@ -267,7 +267,7 @@
     }
     .menu-funcoes-968 li{
         display: block;
-        margin-top: 10%;
+        margin-top: 5%;
     }
     .menu-funcoes-968 li a{
         font: bold 12pt caption;
@@ -364,7 +364,6 @@
     }
     .body-360{
         display: block;
-        display: flex;
     }
     .menu-funcoes-360{
         height: 100vh;
@@ -392,15 +391,6 @@
         text-decoration: none;
         color: rgb(183, 0, 183);
         padding: 10px 10px;
-    }
-    .entrar-sair-funcoes-360 nav ul{
-        background-color: rgb(128, 2, 128);
-        height: 100vh;
-        padding: 5px;
-        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-    }
-    .entrar-sair-funcoes-360 a,span{
-        display: block;
     }
     .men-360 span{
         background-color: rgba(255, 166, 0, 0.550);
