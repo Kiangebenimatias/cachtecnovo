@@ -357,12 +357,14 @@
 
     }
     .menu-funcoes-360 > p span{
+
         background: none;
         box-shadow: none;
         margin-top: 5%;
         margin-bottom: 5px;
         margin-left: 50%;
         color: red;
+        
     }
     .menu-funcoes-360 li{
         margin-top: 10%;
